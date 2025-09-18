@@ -1,0 +1,131 @@
+/*body css will go here*/
+body{
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+}
+
+/*header css will go here*/
+header{
+    padding: 1rem 10px;
+    background-color: #644536;
+}
+
+header span{
+    color: lightgray;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+/*nav css will go here*/
+nav{
+    background-color: #41D3BD;
+}
+nav ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0px 11px;
+    display: flex;
+}
+
+nav a{
+    display: block;
+    padding: .9rem 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #1C77C3;
+    font-weight: 700;
+}
+
+nav li a:hover{
+    color: whitesmoke;
+}
+
+nav li.active a{
+    background-color:#F3DE8A;
+    color:#644536;
+}
+
+/*main css will go here*/
+main{
+    background-color: #F2E2D2;
+    padding: 1rem 10px;
+}
+main h1{
+    color: #1C77C3;
+}
+
+main h2{
+    color: #644536
+    margin-bottom: 3rem;
+}
+main p{
+    margin: 0;
+    color: #313;
+}
+
+main ol{
+    padding: .6rem 30px;
+    background-color: #F3DE8A
+}
+
+main ul{
+    list-style-type: circle;
+}
+
+main ul li{
+    line-height: 127%;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
+main dl dt{
+    color: #41D3BD;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd{
+    color: #644536;
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+main strong{
+    font-weight: 700;
+    color: black;
+}
+
+main em{
+    font-weight: 300;
+}
+
+main address{
+    font-style: normal;
+    background-color: #F3DE8A;
+    padding: .5rem;
+    border-radius: 8px;
+    border: 1px solid #1C77C3;
+    width: 200px;
+    font-size: .74rem;
+}
+
+main a{
+    color: #644536
+}
+
+main a:hover{
+    color: #41D3BD;
+}
+
+/*footer css will go here*/
+footer{
+    background-color: #644536;
+    text-align: center;
+    padding: 1rem;
+}
+footer p{
+    margin: 0;
+    font-size: .7rem;
+    color: lightgray;
+    letter-spacing: 2px;
+}
