@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ashlynn Worthington">
+    <meta name="description" content="Form to adopt a sheltie">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>The Sheltie Spot: Adopt a Sheltie</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Icon of a pawprint" width="86" height="81">
+        <span>The Sheltie Spot</span>
+    </header>
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History of Shelties</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="active"><a href="adopt.html">Adopt a Sheltie</a></li>
+        </ul>
+    </nav>
+    <main>
+       <h1>Adopt a Sheltie</h1>
+       <form method="get" class="theForm" action="thanks.html">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label>First name*<input type="text" name="first" required></label>
+            <label>Last name*<input type="text" name="last" required></label>
+            <label>Email*<input type="email" name="email" placeholder="jane.doe@gmail.com" required></label>
+            <label>Telephone Number*<input type="tel" name="phone" placeholder="555-555-5555" required></label>
+        </fieldset>
+        <fieldset>
+            <legend>Sheltie Type</legend>
+            <label><input type="checkbox" name="sable" value="selected">Sable</label>
+            <label><input type="checkbox" name="tricolor" value="selected">Tricolor</label>
+            <label><input type="checkbox" name="merle" value="selected">Blue Merle</label>
+            <label><input type="checkbox" name="black" value="selected">Bi-Black</label>
+            <label><input type="checkbox" name="blue" value="selected">Bi-Blue</label>
+            <label><input type="checkbox" name="white" value="selected">Color-Headed White</label>
+        </fieldset>
+        <fieldset>
+            <legend>How many Shelties would you like to adopt?</legend>
+            <label><input type="radio" name="method" value="one">One Sheltie</label>
+            <label><input type="radio" name="method" value="two">Two Shelties</label>
+            <label><input type="radio" name="method" value="three">Three Shelties</label>
+            <label><input type="radio" name="method" value="four">Four or more Shelties</label>
+            <label>What kind of house do you live in?
+                <select name="house">
+                    <option value="none">Select a house type</option>
+                    <option value="apartment">Apartment Complex</option>
+                    <option value="townhome">Townhome</option>
+                    <option value="house">A regular House</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+        </fieldset>
+            <label>Notes/Comments
+            <textarea name="notes" placeholder="Add any special requests here"></textarea>
+            </label>
+        <input type="submit" value="Send adoption form">
+       </form>
+    </main>
+    <footer>
+        <p>&copy;2025 &bull; Ashlynn Worthington &bull; Web Essentials</p>
+    </footer>
+</body>
+</html>
