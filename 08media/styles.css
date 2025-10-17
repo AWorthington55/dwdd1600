@@ -1,0 +1,296 @@
+/*body css will go here*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+}
+
+/*header css will go here*/
+header{
+    padding: 1rem 10px;
+    background-color: #644536;
+}
+
+header span{
+    color: lightgray;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a{
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-color: #41D3BD;
+        border-bottom: solid 1.5px #888
+    }
+
+    nav .active a{
+        background-color: #F3DE8A;
+        color: #644536;
+        background-image: linear-gradient(to bottom, #F3De8A,#debe3d );
+    }
+}
+
+@media only screen and (min-width: 801px){
+    nav{
+    background-color: #41D3BD;
+}
+nav ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0px 11px;
+    display: flex;
+}
+
+nav a{
+    display: block;
+    padding: .9rem 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #1C77C3;
+    font-weight: 700;
+}
+
+nav li a:hover{
+    color: whitesmoke;
+}
+
+nav li.active a{
+    background-color:#F3DE8A;
+    color:#644536;
+}
+}
+
+/*nav css will go here*/
+
+
+/*main css will go here*/
+main{
+    background-color: #F2E2D2;
+    padding: 1rem 10px;
+    fill:#F2E2D2;
+}
+main h1{
+    color: #1C77C3;
+}
+
+main h2{
+    color: #644536;
+    margin-bottom: 3rem;
+}
+main p{
+    margin: 0;
+    color: #313;
+}
+
+main ol{
+    padding: .6rem 30px;
+    background-color: #F3DE8A;
+}
+
+main ul{
+    list-style-type: circle;
+}
+
+main ul li{
+    line-height: 127%;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
+main dl dt{
+    color: #41D3BD;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd{
+    color: #644536;
+    font-size: .9rem;
+    margin-left: 20px;
+}
+
+main strong{
+    font-weight: 700;
+    color: black;
+}
+
+main em{
+    font-weight: 300;
+}
+
+main address{
+    font-style: normal;
+    background-color: #F3DE8A;
+    padding: .5rem;
+    border-radius: 8px;
+    border: 1px solid #1C77C3;
+    width: 200px;
+    font-size: .74rem;
+}
+
+main a{
+    color: #644536
+}
+
+main a:hover{
+    color: #41D3BD;
+}
+
+.hero{
+    width: 100%;
+    height: auto;
+}
+
+/*table css here*/
+
+table.type{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.type th{
+    background-color: #F3DE8A;
+    color: #313;
+    padding: .6rem 2%;
+    text-align: left;
+}
+
+table.type td{
+    color: #1C77C3;
+    padding: .4rem 2%;
+}
+
+.contact{
+    font-size: 1rem;
+    background-color: #F2E2D2;
+    border-color: #F2E2D2;
+}
+
+table.type tr:nth-child(even){
+    background-color: #ddd;
+}
+
+table.type tr:hover{
+    background-color: #ccc;
+}
+
+figure.puppy{
+    margin: 0 0 0 9px;
+    width: 40%;
+    float: right;
+}
+
+figure.puppy img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+figure.puppy figcaption{
+    text-align: center;
+    font-size: .78rem;
+}
+
+div.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+div.gallery figure{
+    margin: 0;
+}
+
+div.gallery figcaption{
+    text-align: center;
+    font-size: .85rem;
+    color: #41D3BD;
+}
+
+div.gallery img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+div.gallery img:hover{
+    box-shadow: 0px 0px 10px rgba(82, 57, 2, 0.974);
+}
+
+/*form css here*/
+.theForm fieldset{
+    border: 2px solid #644536;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+}
+
+.theForm legend{
+    color: #644536;
+    font-size: .9rem;
+}
+
+.theForm label{
+    margin: .5rem;
+    display: block;
+}
+
+.theForm select, .theForm [type=text], .theForm [type=tel], .theForm [type=email], .theForm textarea{
+    display: block;
+    border: solid 1px #313;
+    padding: .4rem;
+    width: 250px;
+    border-radius: .4rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 200;
+}
+
+.theForm textarea{
+    height: 7rem;
+}
+
+.theForm :required{
+    background-color: rgba(156,51,53,0.3);
+}
+
+.theForm [type=submit]{
+    background-color: #41D3BD;
+    border: none;
+    color: #888;
+    padding: 1rem 2rem;
+    margin: 1rem 0 0 1vw;
+    border-radius: 12px;
+}
+
+/*footer css will go here*/
+footer{
+    background-color: #644536;
+    text-align: center;
+    padding: 1rem;
+    clear: both;
+}
+footer p{
+    margin: 0;
+    font-size: .7rem;
+    color: lightgray;
+    letter-spacing: 2px;
+}
+
+header, nav, main, footer{
+    max-width: 64rem;
+    margin: 0 auto;
+}
